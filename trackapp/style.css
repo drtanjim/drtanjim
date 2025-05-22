@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+#orderIdInput {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    max-width: 250px; /* Limit input width */
+}
+
+#trackButton {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#trackButton:hover {
+    background-color: #0056b3;
+}
+
+.status-result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    min-height: 80px; /* Ensure space even when empty */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.status-result p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.status-result p strong {
+    color: #222;
+    display: inline-block;
+    min-width: 80px; /* Align content */
+}
+
+.status-result .highlight-status {
+    font-weight: bold;
+    color: #007bff; /* Example status color */
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
